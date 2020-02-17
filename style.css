@@ -1,0 +1,12 @@
+body {
+    background-color: whitesmoke; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 30px;
+    margin: 10px 5px 0 60px;
+    color: #45ada3;
+}
+h5{
+    margin: 10px 5px 0 60px;
+    color: lightgray;
+}
