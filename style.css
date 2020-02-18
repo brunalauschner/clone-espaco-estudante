@@ -52,8 +52,8 @@ h1 {
 #btnEntrar {
     height: 30px;
     width: 110px;
-    margin: 25px 0 0 0;
-    border-radius: 10px;
+    margin: 25px 0 10px 0;
+    border-radius: 16px;
     border: none;
     background-color: #5cc5b7;
     color: white;
