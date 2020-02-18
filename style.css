@@ -2,16 +2,67 @@ body {
     background-color: whitesmoke; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-    font-size: 30px;
-    margin: 10px 5px 0 60px;
-    color: #45ada3;
+    font-size: 28px;
+    margin: 0 5px 0 0;
+    color: #29ac9a;
 }
-h5{
-    margin: 10px 5px 0 60px;
-    color: lightgray;
+#subtitulo {
+    font-size: 13px;
+    margin: 10px 5px 0 0;
+    color: #9babb9;
+}
+.login {
+    margin: 85px 0 0 235px;
+    width: 300px;
+    height: 330px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px 60px;
+    text-align: center;
+}
+.inputs_login {
+    width: 270px;
+    height: 30px;
+    border: 1px solid #9babb9;
+    border-radius: 3px;
+    margin: 30px 0 0 20px;
+    
+}
+.inputs_login input{
+    height: 28px;
+    width: 230px;
+    outline: none;
+    border: none;
+}
+.inputs_senha{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #9babb9;
+    border-radius: 3px;
+    margin: 15px 0 0 20px;
+}
+.inputs_senha input{
+    height: 28px;
+    width: 230px;
+    outline: none;
+    border: none;
 }
 
-#subtitulo {
-    margin: 10px 5px 0 60px;
-    color: lightgray;
+#btnEntrar {
+    height: 30px;
+    width: 110px;
+    margin: 25px 0 0 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #5cc5b7;
+    color: white;
+    text-align: center;
+}
+#esqueceu {
+    font-size: 11px;
+    margin: 10px 5px 0 0;
+    color: #9babb9;
+    text-align: center;
+    text-decoration: underline;
 }
