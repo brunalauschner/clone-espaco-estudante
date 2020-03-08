@@ -16,9 +16,9 @@
         </ul>
 
         <div id="caixa">
-            <input type="text" placeholder="Código" id="codig">
-            <input type="text" placeholder="Nome" id="nom">
-            <button @click="salvar(codig,nom)" >Salvar</button><br>
+            <input type="text" placeholder="Código" id="textocodigo">
+            <input type="text" placeholder="Nome" id="textonome">
+            <button @click="salvar" >Salvar</button><br>
         </div>
 
         <table style="border: 1px solid grey;">
@@ -50,9 +50,7 @@
                     nome: "Gabriel"
                 }] 
             }, methods: {
-                salvar: function(codigoo, nomee){
-                    alunos.codigo=codigoo
-                    alunos.nome=nomee
+                salvar: function(){
                     this.alunos.push()
                 }
             }

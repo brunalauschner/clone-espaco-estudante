@@ -49,9 +49,11 @@
         }, methods: {
           logar: function(){
             if(this.login=="senai" && this.senha=="123") {
+              this.logado= ''
               this.logado = 'Logado com sucesso!'
             }
             else{
+              this.logado= ''
               this.logado = 'Login inválido'
             }
           }
