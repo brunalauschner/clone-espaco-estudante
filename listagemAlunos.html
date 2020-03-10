@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relação de alunos da turma técnico em desenvolvimento de software - 2019/2020</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--código para conectar com o vue.js-->
 </head>
 <body>
     <div id="app">
-        <h1>Relação de alunos</h1>
+        <h1>Relação de alunos {{nome}} </h1> <!--vbind muda apenas no site e nao muda no codigo-->
+
+            <input type="text" placeholder="Código" v-model="codigo"> <!--vmodel muda tanto no codigo quanto no site-->
+            <input type="text" placeholder="Nome" v-model="nome">
+            <button v-on:click="salvar" >Salvar</button><br>
+
         <ul>
             <li v-for="aluno in alunos" style="list-style-type: lower-greek;">
                 {{aluno.nome}}     
             </li>
         </ul>
 
-        <div id="caixa">
-            <input type="text" placeholder="Código" id="textocodigo">
-            <input type="text" placeholder="Nome" id="textonome">
-            <button @click="salvar" >Salvar</button><br>
-        </div>
 
         <table style="border: 1px solid grey;">
-            <thead style="background-color: #dcdcdc;">
+            <thead style="background-color: #dcdcdc;"> <!--cabeçalho-->
                 <th>Código</th>
                 <th>Nome</th>
             </thead>
-            <tbody>
+            <tbody> <!--parte do meio-->
                 <tr v-for="aluno in alunos">
                     <td>{{aluno.codigo}}</td>
                     <td>{{aluno.nome}}</td>
                 </tr>
             </tbody>
+            <tfoot> <!--rodapé-->
+                <tr v-if="alunos.length == 0">
+                    <td colspan="2">Nenhum aluno cadastrado</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 
     <script>
         let app = new Vue({
-            el: "#app",
+            el: "#app", 
             data: {
-                alunos: [{
-                    codigo: 1,
-                    nome: "Alice"
-                    }, {
-                    codigo: 2,
-                    nome: "Bruna"
-                    }, {
-                    codigo: 3,
-                    nome: "Gabriel"
-                }] 
-            }, methods: {
+                alunos: [],
+                codigo: '',
+                nome: '' 
+            }, 
+            methods: {
                 salvar: function(){
-                    this.alunos.push()
+                    this.alunos.push({
+                        codigo: this.codigo,
+                        nome: this.nome
+                    })
                 }
             }
         })
