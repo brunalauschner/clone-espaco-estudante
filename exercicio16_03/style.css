@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+
+.menu-superior{
+    margin: 0px;
+    display: flex;
+    background: rgb(255, 114, 18);;
+    color: white;
+    height: 30px;
+    justify-content: start;
+}
+
+.logo{
+    width: 100px;
+    height: 30px;
+    background: url('./logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#info {
+    font-size: 12px;
+    width: 195px;
+    height: 30px;
+}
+
+.menu-superior li{
+    width: 150px;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-superior li:hover{
+    background: #E94E1B;
+    text-decoration: underline;
+}
+
+
+#fundo{
+    background-color: rgb(37, 169, 252);
+    height: 350px;
+    width: 350px;
+    display: flex;
+}
+
+.orelha{
+    background-color: rgb(129, 156, 175);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+    border: 13px solid rgb(166,190,207);
+    position: relative;
+}
+
+#cabeca{
+    background-color: rgb(166, 190, 207);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    position: absolute;
+    margin: 110px 0px 0px 80px;
+}
